@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F579777CAFDF7864BCCA195 /* Pods_JTGApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4180E9AE86AFA9AF9BB42C /* Pods_JTGApp.framework */; };
+		807FE7311CEC78E400F69D42 /* GuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807FE72F1CEC78E400F69D42 /* GuideCell.swift */; };
+		807FE7321CEC78E400F69D42 /* GuideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 807FE7301CEC78E400F69D42 /* GuideCell.xib */; };
+		807FE7341CEC816900F69D42 /* TourDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807FE7331CEC816900F69D42 /* TourDays.swift */; };
+		8092981E1CEB18C5009662FD /* GuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8092981D1CEB18C5009662FD /* GuideTableViewController.swift */; };
+		80C6561F1CEC6DC8006C913A /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C6561E1CEC6DC8006C913A /* Guide.swift */; };
 		80D998181CE20C9B009C6E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D998171CE20C9B009C6E1A /* AppDelegate.swift */; };
-		80D9981A1CE20C9B009C6E1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D998191CE20C9B009C6E1A /* ViewController.swift */; };
 		80D9981D1CE20C9B009C6E1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D9981B1CE20C9B009C6E1A /* Main.storyboard */; };
 		80D9981F1CE20C9B009C6E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D9981E1CE20C9B009C6E1A /* Assets.xcassets */; };
 		80D998221CE20C9B009C6E1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D998201CE20C9B009C6E1A /* LaunchScreen.storyboard */; };
@@ -34,9 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		807FE72F1CEC78E400F69D42 /* GuideCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCell.swift; sourceTree = "<group>"; };
+		807FE7301CEC78E400F69D42 /* GuideCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideCell.xib; sourceTree = "<group>"; };
+		807FE7331CEC816900F69D42 /* TourDays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourDays.swift; sourceTree = "<group>"; };
+		8092981D1CEB18C5009662FD /* GuideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideTableViewController.swift; sourceTree = "<group>"; };
+		80C6561E1CEC6DC8006C913A /* Guide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
 		80D998141CE20C9B009C6E1A /* JTGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D998171CE20C9B009C6E1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80D998191CE20C9B009C6E1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80D9981C1CE20C9B009C6E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80D9981E1CE20C9B009C6E1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80D998211CE20C9B009C6E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		80D998331CE20C9B009C6E1A /* JTGAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTGAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D998371CE20C9B009C6E1A /* JTGAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTGAppUITests.swift; sourceTree = "<group>"; };
 		80D998391CE20C9B009C6E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC66D505AD93A867D9D1F893 /* Pods-JTGApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTGApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JTGApp/Pods-JTGApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DB4180E9AE86AFA9AF9BB42C /* Pods_JTGApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTGApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5431DEF354779515868B2DA /* Pods-JTGApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTGApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JTGApp/Pods-JTGApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F579777CAFDF7864BCCA195 /* Pods_JTGApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D6B64F71A63FCE6A0BC4C45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC66D505AD93A867D9D1F893 /* Pods-JTGApp.debug.xcconfig */,
+				E5431DEF354779515868B2DA /* Pods-JTGApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		746EFB05BD0B75E4AA1C3802 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB4180E9AE86AFA9AF9BB42C /* Pods_JTGApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80C6561B1CEC6D03006C913A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8092981D1CEB18C5009662FD /* GuideTableViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		80C6561C1CEC6D0C006C913A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80C6561E1CEC6DC8006C913A /* Guide.swift */,
+				807FE7331CEC816900F69D42 /* TourDays.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		80C6561D1CEC6D16006C913A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				807FE72F1CEC78E400F69D42 /* GuideCell.swift */,
+				807FE7301CEC78E400F69D42 /* GuideCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		80D9980B1CE20C9B009C6E1A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +137,8 @@
 				80D9982B1CE20C9B009C6E1A /* JTGAppTests */,
 				80D998361CE20C9B009C6E1A /* JTGAppUITests */,
 				80D998151CE20C9B009C6E1A /* Products */,
+				3D6B64F71A63FCE6A0BC4C45 /* Pods */,
+				746EFB05BD0B75E4AA1C3802 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +155,11 @@
 		80D998161CE20C9B009C6E1A /* JTGApp */ = {
 			isa = PBXGroup;
 			children = (
-				80D998171CE20C9B009C6E1A /* AppDelegate.swift */,
-				80D998191CE20C9B009C6E1A /* ViewController.swift */,
 				80D9981B1CE20C9B009C6E1A /* Main.storyboard */,
+				80D998171CE20C9B009C6E1A /* AppDelegate.swift */,
+				80C6561B1CEC6D03006C913A /* ViewController */,
+				80C6561D1CEC6D16006C913A /* Views */,
+				80C6561C1CEC6D0C006C913A /* Models */,
 				80D9981E1CE20C9B009C6E1A /* Assets.xcassets */,
 				80D998201CE20C9B009C6E1A /* LaunchScreen.storyboard */,
 				80D998231CE20C9B009C6E1A /* Info.plist */,
@@ -132,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80D9983C1CE20C9B009C6E1A /* Build configuration list for PBXNativeTarget "JTGApp" */;
 			buildPhases = (
+				6C33518F04D055CF43E130D8 /* Check Pods Manifest.lock */,
 				80D998101CE20C9B009C6E1A /* Sources */,
 				80D998111CE20C9B009C6E1A /* Frameworks */,
 				80D998121CE20C9B009C6E1A /* Resources */,
+				D221801BA0289DDD148BB12B /* Embed Pods Frameworks */,
+				71B49FD3F6977C1BA460F777 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				807FE7321CEC78E400F69D42 /* GuideCell.xib in Resources */,
 				80D998221CE20C9B009C6E1A /* LaunchScreen.storyboard in Resources */,
 				80D9981F1CE20C9B009C6E1A /* Assets.xcassets in Resources */,
 				80D9981D1CE20C9B009C6E1A /* Main.storyboard in Resources */,
@@ -251,12 +315,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C33518F04D055CF43E130D8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71B49FD3F6977C1BA460F777 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JTGApp/Pods-JTGApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D221801BA0289DDD148BB12B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JTGApp/Pods-JTGApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80D998101CE20C9B009C6E1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D9981A1CE20C9B009C6E1A /* ViewController.swift in Sources */,
+				80C6561F1CEC6DC8006C913A /* Guide.swift in Sources */,
+				8092981E1CEB18C5009662FD /* GuideTableViewController.swift in Sources */,
+				807FE7311CEC78E400F69D42 /* GuideCell.swift in Sources */,
+				807FE7341CEC816900F69D42 /* TourDays.swift in Sources */,
 				80D998181CE20C9B009C6E1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +512,7 @@
 		};
 		80D9983D1CE20C9B009C6E1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC66D505AD93A867D9D1F893 /* Pods-JTGApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JTGApp/Info.plist;
@@ -408,6 +524,7 @@
 		};
 		80D9983E1CE20C9B009C6E1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5431DEF354779515868B2DA /* Pods-JTGApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JTGApp/Info.plist;
@@ -482,6 +599,7 @@
 				80D9983E1CE20C9B009C6E1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80D9983F1CE20C9B009C6E1A /* Build configuration list for PBXNativeTarget "JTGAppTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +608,7 @@
 				80D998411CE20C9B009C6E1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80D998421CE20C9B009C6E1A /* Build configuration list for PBXNativeTarget "JTGAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +617,7 @@
 				80D998441CE20C9B009C6E1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
