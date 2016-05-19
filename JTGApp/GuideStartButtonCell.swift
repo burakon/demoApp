@@ -7,7 +7,8 @@ class GuideStartButtonCell: UITableViewCell {
     
     func configure(withGuide guide: Guide) {
         
-        guideButton.addTarget(self, action: #selector(GuideDetailViewController.tappedGuideButton(_:)), forControlEvents: .TouchUpInside)
+        guideButton.addTarget(GuideDetailViewController(), action: #selector(GuideDetailViewController.tappedGuideButton(_:)), forControlEvents: .TouchUpInside)
+        
         
     
     }

@@ -20,6 +20,12 @@ class GuideCell: UITableViewCell {
         areaLabel.text = guide.area
         languageLabel.text = guide.language
         
+        
+        countryImageView.layer.shadowColor = UIColor.lightGrayColor().CGColor
+        countryImageView.layer.shadowOffset = CGSizeMake(1, 1)
+        countryImageView.layer.shadowOpacity = 1.0
+        countryImageView.layer.shadowRadius = 1
+        
         let tourDay = "\(guide.tourDays.firstDay) ~ \(guide.tourDays.lastDay)"
         tourDayLabel.text = tourDay
         dateLabel.text = guide.createdAt

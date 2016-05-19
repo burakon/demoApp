@@ -10,7 +10,6 @@ class GuideProfileCell: UITableViewCell {
         profileView.text = text
         
         
-        //サイズリセット
         setNeedsUpdateConstraints()
         layoutIfNeeded()
         

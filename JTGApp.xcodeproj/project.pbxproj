@@ -24,6 +24,11 @@
 		80D998221CE20C9B009C6E1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D998201CE20C9B009C6E1A /* LaunchScreen.storyboard */; };
 		80D9982D1CE20C9B009C6E1A /* JTGAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D9982C1CE20C9B009C6E1A /* JTGAppTests.swift */; };
 		80D998381CE20C9B009C6E1A /* JTGAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D998371CE20C9B009C6E1A /* JTGAppUITests.swift */; };
+		80E5D4AE1CED879400C31B80 /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E5D4AD1CED879400C31B80 /* MyData.swift */; };
+		80E5D4B11CED8E6700C31B80 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E5D4B01CED8E6700C31B80 /* MyInfoViewController.swift */; };
+		80E5D4B41CED8F7000C31B80 /* MyInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E5D4B21CED8F7000C31B80 /* MyInfoCell.swift */; };
+		80E5D4B51CED8F7000C31B80 /* MyInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E5D4B31CED8F7000C31B80 /* MyInfoCell.xib */; };
+		80E5D4B81CEDA82000C31B80 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E5D4B71CEDA82000C31B80 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,11 @@
 		80D998331CE20C9B009C6E1A /* JTGAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTGAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D998371CE20C9B009C6E1A /* JTGAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTGAppUITests.swift; sourceTree = "<group>"; };
 		80D998391CE20C9B009C6E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E5D4AD1CED879400C31B80 /* MyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
+		80E5D4B01CED8E6700C31B80 /* MyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
+		80E5D4B21CED8F7000C31B80 /* MyInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInfoCell.swift; sourceTree = "<group>"; };
+		80E5D4B31CED8F7000C31B80 /* MyInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyInfoCell.xib; sourceTree = "<group>"; };
+		80E5D4B71CEDA82000C31B80 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AC66D505AD93A867D9D1F893 /* Pods-JTGApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTGApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JTGApp/Pods-JTGApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DB4180E9AE86AFA9AF9BB42C /* Pods_JTGApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTGApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5431DEF354779515868B2DA /* Pods-JTGApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTGApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JTGApp/Pods-JTGApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E5D4B81CEDA82000C31B80 /* QuartzCore.framework in Frameworks */,
 				3F579777CAFDF7864BCCA195 /* Pods_JTGApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +120,7 @@
 		746EFB05BD0B75E4AA1C3802 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80E5D4B71CEDA82000C31B80 /* QuartzCore.framework */,
 				DB4180E9AE86AFA9AF9BB42C /* Pods_JTGApp.framework */,
 			);
 			name = Frameworks;
@@ -119,6 +131,7 @@
 			children = (
 				8092981D1CEB18C5009662FD /* GuideTableViewController.swift */,
 				807FE7351CEC8D8B00F69D42 /* GuideDetailViewController.swift */,
+				80E5D4B01CED8E6700C31B80 /* MyInfoViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -126,6 +139,7 @@
 		80C6561C1CEC6D0C006C913A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				80E5D4AD1CED879400C31B80 /* MyData.swift */,
 				80C6561E1CEC6DC8006C913A /* Guide.swift */,
 				807FE7331CEC816900F69D42 /* TourDays.swift */,
 			);
@@ -135,12 +149,8 @@
 		80C6561D1CEC6D16006C913A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				807FE72F1CEC78E400F69D42 /* GuideCell.swift */,
-				807FE7301CEC78E400F69D42 /* GuideCell.xib */,
-				807FE7371CED500500F69D42 /* GuideProfileCell.swift */,
-				807FE7381CED500500F69D42 /* GuideProfileCell.xib */,
-				8042B4981CED574400526065 /* GuideStartButtonCell.swift */,
-				8042B4991CED574400526065 /* GuideStartButtonCell.xib */,
+				80E5D4B61CED8F7C00C31B80 /* MyInfoViewController */,
+				80E5D4AF1CED8CBF00C31B80 /* GuideViewController */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -198,6 +208,28 @@
 				80D998391CE20C9B009C6E1A /* Info.plist */,
 			);
 			path = JTGAppUITests;
+			sourceTree = "<group>";
+		};
+		80E5D4AF1CED8CBF00C31B80 /* GuideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				807FE72F1CEC78E400F69D42 /* GuideCell.swift */,
+				807FE7301CEC78E400F69D42 /* GuideCell.xib */,
+				807FE7371CED500500F69D42 /* GuideProfileCell.swift */,
+				807FE7381CED500500F69D42 /* GuideProfileCell.xib */,
+				8042B4981CED574400526065 /* GuideStartButtonCell.swift */,
+				8042B4991CED574400526065 /* GuideStartButtonCell.xib */,
+			);
+			name = GuideViewController;
+			sourceTree = "<group>";
+		};
+		80E5D4B61CED8F7C00C31B80 /* MyInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80E5D4B21CED8F7000C31B80 /* MyInfoCell.swift */,
+				80E5D4B31CED8F7000C31B80 /* MyInfoCell.xib */,
+			);
+			name = MyInfoViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				807FE7321CEC78E400F69D42 /* GuideCell.xib in Resources */,
+				80E5D4B51CED8F7000C31B80 /* MyInfoCell.xib in Resources */,
 				80D998221CE20C9B009C6E1A /* LaunchScreen.storyboard in Resources */,
 				807FE73A1CED500500F69D42 /* GuideProfileCell.xib in Resources */,
 				80D9981F1CE20C9B009C6E1A /* Assets.xcassets in Resources */,
@@ -385,13 +418,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E5D4AE1CED879400C31B80 /* MyData.swift in Sources */,
 				80C6561F1CEC6DC8006C913A /* Guide.swift in Sources */,
+				80E5D4B11CED8E6700C31B80 /* MyInfoViewController.swift in Sources */,
 				8092981E1CEB18C5009662FD /* GuideTableViewController.swift in Sources */,
 				807FE7361CEC8D8B00F69D42 /* GuideDetailViewController.swift in Sources */,
 				807FE7311CEC78E400F69D42 /* GuideCell.swift in Sources */,
 				807FE7341CEC816900F69D42 /* TourDays.swift in Sources */,
 				8042B49A1CED574400526065 /* GuideStartButtonCell.swift in Sources */,
 				807FE7391CED500500F69D42 /* GuideProfileCell.swift in Sources */,
+				80E5D4B41CED8F7000C31B80 /* MyInfoCell.swift in Sources */,
 				80D998181CE20C9B009C6E1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

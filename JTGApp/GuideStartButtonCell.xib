@@ -31,7 +31,6 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="GuideStartButton" destination="dRH-yo-xJw" id="aQN-mc-wFb"/>
                 <outlet property="guideButton" destination="dRH-yo-xJw" id="bzT-uo-tR0"/>
             </connections>
         </tableViewCell>

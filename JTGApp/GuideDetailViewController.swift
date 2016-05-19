@@ -1,10 +1,4 @@
-//
-//  GuideDetailViewController.swift
-//  JTGApp
-//
-//  Created by 後藤玲子 on 2016/05/18.
-//  Copyright © 2016年 gotoureiko. All rights reserved.
-//
+
 
 import UIKit
 
@@ -75,7 +69,7 @@ class GuideDetailViewController: UITableViewController {
     
     func tappedGuideButton (sender: UIButton){
         
-    //チャット画面へsegue
+    print("チャット画面へsegue")
     }
     
 
