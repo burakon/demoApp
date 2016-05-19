@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3F579777CAFDF7864BCCA195 /* Pods_JTGApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4180E9AE86AFA9AF9BB42C /* Pods_JTGApp.framework */; };
+		8042B49A1CED574400526065 /* GuideStartButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042B4981CED574400526065 /* GuideStartButtonCell.swift */; };
+		8042B49B1CED574400526065 /* GuideStartButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8042B4991CED574400526065 /* GuideStartButtonCell.xib */; };
 		807FE7311CEC78E400F69D42 /* GuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807FE72F1CEC78E400F69D42 /* GuideCell.swift */; };
 		807FE7321CEC78E400F69D42 /* GuideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 807FE7301CEC78E400F69D42 /* GuideCell.xib */; };
 		807FE7341CEC816900F69D42 /* TourDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807FE7331CEC816900F69D42 /* TourDays.swift */; };
+		807FE7361CEC8D8B00F69D42 /* GuideDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807FE7351CEC8D8B00F69D42 /* GuideDetailViewController.swift */; };
+		807FE7391CED500500F69D42 /* GuideProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807FE7371CED500500F69D42 /* GuideProfileCell.swift */; };
+		807FE73A1CED500500F69D42 /* GuideProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 807FE7381CED500500F69D42 /* GuideProfileCell.xib */; };
 		8092981E1CEB18C5009662FD /* GuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8092981D1CEB18C5009662FD /* GuideTableViewController.swift */; };
 		80C6561F1CEC6DC8006C913A /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C6561E1CEC6DC8006C913A /* Guide.swift */; };
 		80D998181CE20C9B009C6E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D998171CE20C9B009C6E1A /* AppDelegate.swift */; };
@@ -39,9 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8042B4981CED574400526065 /* GuideStartButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideStartButtonCell.swift; sourceTree = "<group>"; };
+		8042B4991CED574400526065 /* GuideStartButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideStartButtonCell.xib; sourceTree = "<group>"; };
 		807FE72F1CEC78E400F69D42 /* GuideCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCell.swift; sourceTree = "<group>"; };
 		807FE7301CEC78E400F69D42 /* GuideCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideCell.xib; sourceTree = "<group>"; };
 		807FE7331CEC816900F69D42 /* TourDays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourDays.swift; sourceTree = "<group>"; };
+		807FE7351CEC8D8B00F69D42 /* GuideDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideDetailViewController.swift; sourceTree = "<group>"; };
+		807FE7371CED500500F69D42 /* GuideProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideProfileCell.swift; sourceTree = "<group>"; };
+		807FE7381CED500500F69D42 /* GuideProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideProfileCell.xib; sourceTree = "<group>"; };
 		8092981D1CEB18C5009662FD /* GuideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideTableViewController.swift; sourceTree = "<group>"; };
 		80C6561E1CEC6DC8006C913A /* Guide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
 		80D998141CE20C9B009C6E1A /* JTGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				8092981D1CEB18C5009662FD /* GuideTableViewController.swift */,
+				807FE7351CEC8D8B00F69D42 /* GuideDetailViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -126,6 +137,10 @@
 			children = (
 				807FE72F1CEC78E400F69D42 /* GuideCell.swift */,
 				807FE7301CEC78E400F69D42 /* GuideCell.xib */,
+				807FE7371CED500500F69D42 /* GuideProfileCell.swift */,
+				807FE7381CED500500F69D42 /* GuideProfileCell.xib */,
+				8042B4981CED574400526065 /* GuideStartButtonCell.swift */,
+				8042B4991CED574400526065 /* GuideStartButtonCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -294,8 +309,10 @@
 			files = (
 				807FE7321CEC78E400F69D42 /* GuideCell.xib in Resources */,
 				80D998221CE20C9B009C6E1A /* LaunchScreen.storyboard in Resources */,
+				807FE73A1CED500500F69D42 /* GuideProfileCell.xib in Resources */,
 				80D9981F1CE20C9B009C6E1A /* Assets.xcassets in Resources */,
 				80D9981D1CE20C9B009C6E1A /* Main.storyboard in Resources */,
+				8042B49B1CED574400526065 /* GuideStartButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,8 +387,11 @@
 			files = (
 				80C6561F1CEC6DC8006C913A /* Guide.swift in Sources */,
 				8092981E1CEB18C5009662FD /* GuideTableViewController.swift in Sources */,
+				807FE7361CEC8D8B00F69D42 /* GuideDetailViewController.swift in Sources */,
 				807FE7311CEC78E400F69D42 /* GuideCell.swift in Sources */,
 				807FE7341CEC816900F69D42 /* TourDays.swift in Sources */,
+				8042B49A1CED574400526065 /* GuideStartButtonCell.swift in Sources */,
+				807FE7391CED500500F69D42 /* GuideProfileCell.swift in Sources */,
 				80D998181CE20C9B009C6E1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

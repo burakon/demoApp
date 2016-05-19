@@ -4,7 +4,7 @@ import UIKit
 class GuideViewController: UITableViewController {
     
     private let guides = Guide.guide
-    private let speakerDetailSegue = "speakerDetailSegue"
+    private let guideDetailSegue = "GuideDetailSegue"
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -15,8 +15,8 @@ class GuideViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.registerNib(UINib(nibName: String(GuideCell), bundle: nil), forCellReuseIdentifier: String(GuideCell))
-        tableView.estimatedRowHeight = 83
-        
+        //tableView.estimatedRowHeight = 83
+//        tableView.rowHeight = UITableViewAutomaticDimension
 
     }
     
@@ -28,13 +28,13 @@ class GuideViewController: UITableViewController {
         }
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if let guideDetailVC = segue.destinationViewController as? GuideDetailViewController {
-//            if let selectedIndexPath = tableView.indexPathForSelectedRow {
-//                guideDetailVC.guide = guides[selectedIndexPath.row]
-//            }
-//        }
-//    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let guideDetailVC = segue.destinationViewController as? GuideDetailViewController {
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                guideDetailVC.guide = guides[selectedIndexPath.row]
+            }
+        }
+    }
     
     // MARK: - Table view data source
     
@@ -56,24 +56,23 @@ class GuideViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        print(indexPath.row)
-//        performSegueWithIdentifier(speakerDetailSegue, sender: self)
+        performSegueWithIdentifier(guideDetailSegue, sender: self)
     }
 }
 
-//extension GuideViewController: UIViewControllerPreviewingDelegate {
-//    func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
-//        if let indexPath = tableView.indexPathForRowAtPoint(location) {
-//            //This will show the cell clearly and blur the rest of the screen for our peek.
-//            previewingContext.sourceRect = tableView.rectForRowAtIndexPath(indexPath)
-//            let guideDetailVC = GuideDetailViewController()
-//            guideDetailVC.guide = guides[indexPath.row]
-//            return guideDetailVC
-//        }
-//        return nil
-//    }
-//    
-//    func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
-//        navigationController?.pushViewController(viewControllerToCommit, animated: true)
-//    }
-//}
+extension GuideViewController: UIViewControllerPreviewingDelegate {
+    func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        if let indexPath = tableView.indexPathForRowAtPoint(location) {
+            //This will show the cell clearly and blur the rest of the screen for our peek.
+            previewingContext.sourceRect = tableView.rectForRowAtIndexPath(indexPath)
+            let guideDetailVC = GuideDetailViewController()
+            guideDetailVC.guide = guides[indexPath.row]
+            return guideDetailVC
+        }
+        return nil
+    }
+    
+    func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
+        navigationController?.pushViewController(viewControllerToCommit, animated: true)
+    }
+}
