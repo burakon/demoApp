@@ -15,8 +15,6 @@ class GuideViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.registerNib(UINib(nibName: String(GuideCell), bundle: nil), forCellReuseIdentifier: String(GuideCell))
-        //tableView.estimatedRowHeight = 83
-//        tableView.rowHeight = UITableViewAutomaticDimension
 
     }
     

@@ -20,9 +20,6 @@ class MyInfoViewController: UITableViewController ,UIImagePickerControllerDelega
         
         //横棒を描画しない
         tableView.separatorStyle = .None
-        
-        print("ViewDidLoad")
-        
     }
     
     override func didReceiveMemoryWarning() {

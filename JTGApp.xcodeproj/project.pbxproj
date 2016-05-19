@@ -17,6 +17,15 @@
 		807FE7391CED500500F69D42 /* GuideProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807FE7371CED500500F69D42 /* GuideProfileCell.swift */; };
 		807FE73A1CED500500F69D42 /* GuideProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 807FE7381CED500500F69D42 /* GuideProfileCell.xib */; };
 		8092981E1CEB18C5009662FD /* GuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8092981D1CEB18C5009662FD /* GuideTableViewController.swift */; };
+		80A6ED701CEDB6CB00974CB4 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6ED6F1CEDB6CB00974CB4 /* ChatListViewController.swift */; };
+		80A6ED721CEDB6F300974CB4 /* ChatTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6ED711CEDB6F300974CB4 /* ChatTalkViewController.swift */; };
+		80A6ED751CEDB72D00974CB4 /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6ED731CEDB72D00974CB4 /* ChatListCell.swift */; };
+		80A6ED761CEDB72D00974CB4 /* ChatListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A6ED741CEDB72D00974CB4 /* ChatListCell.xib */; };
+		80A6ED791CEDB76100974CB4 /* ChatMyTalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6ED771CEDB76100974CB4 /* ChatMyTalkCell.swift */; };
+		80A6ED7A1CEDB76100974CB4 /* ChatMyTalkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A6ED781CEDB76100974CB4 /* ChatMyTalkCell.xib */; };
+		80A6ED7D1CEDB7C600974CB4 /* ChatReceiveTalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6ED7B1CEDB7C600974CB4 /* ChatReceiveTalkCell.swift */; };
+		80A6ED7E1CEDB7C600974CB4 /* ChatReceiveTalkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A6ED7C1CEDB7C600974CB4 /* ChatReceiveTalkCell.xib */; };
+		80A6ED831CEDC48E00974CB4 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6ED821CEDC48E00974CB4 /* ChatList.swift */; };
 		80C6561F1CEC6DC8006C913A /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C6561E1CEC6DC8006C913A /* Guide.swift */; };
 		80D998181CE20C9B009C6E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D998171CE20C9B009C6E1A /* AppDelegate.swift */; };
 		80D9981D1CE20C9B009C6E1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D9981B1CE20C9B009C6E1A /* Main.storyboard */; };
@@ -58,6 +67,15 @@
 		807FE7371CED500500F69D42 /* GuideProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideProfileCell.swift; sourceTree = "<group>"; };
 		807FE7381CED500500F69D42 /* GuideProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideProfileCell.xib; sourceTree = "<group>"; };
 		8092981D1CEB18C5009662FD /* GuideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideTableViewController.swift; sourceTree = "<group>"; };
+		80A6ED6F1CEDB6CB00974CB4 /* ChatListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		80A6ED711CEDB6F300974CB4 /* ChatTalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTalkViewController.swift; sourceTree = "<group>"; };
+		80A6ED731CEDB72D00974CB4 /* ChatListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
+		80A6ED741CEDB72D00974CB4 /* ChatListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatListCell.xib; sourceTree = "<group>"; };
+		80A6ED771CEDB76100974CB4 /* ChatMyTalkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMyTalkCell.swift; sourceTree = "<group>"; };
+		80A6ED781CEDB76100974CB4 /* ChatMyTalkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatMyTalkCell.xib; sourceTree = "<group>"; };
+		80A6ED7B1CEDB7C600974CB4 /* ChatReceiveTalkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatReceiveTalkCell.swift; sourceTree = "<group>"; };
+		80A6ED7C1CEDB7C600974CB4 /* ChatReceiveTalkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatReceiveTalkCell.xib; sourceTree = "<group>"; };
+		80A6ED821CEDC48E00974CB4 /* ChatList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
 		80C6561E1CEC6DC8006C913A /* Guide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
 		80D998141CE20C9B009C6E1A /* JTGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D998171CE20C9B009C6E1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,11 +153,42 @@
 			name = GuideTableViewController;
 			sourceTree = "<group>";
 		};
+		80A6ED7F1CEDB7CC00974CB4 /* ChatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80A6ED731CEDB72D00974CB4 /* ChatListCell.swift */,
+				80A6ED741CEDB72D00974CB4 /* ChatListCell.xib */,
+				80A6ED771CEDB76100974CB4 /* ChatMyTalkCell.swift */,
+				80A6ED781CEDB76100974CB4 /* ChatMyTalkCell.xib */,
+				80A6ED7B1CEDB7C600974CB4 /* ChatReceiveTalkCell.swift */,
+				80A6ED7C1CEDB7C600974CB4 /* ChatReceiveTalkCell.xib */,
+			);
+			name = ChatViewController;
+			sourceTree = "<group>";
+		};
+		80A6ED801CEDB7EB00974CB4 /* ChatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80A6ED6F1CEDB6CB00974CB4 /* ChatListViewController.swift */,
+				80A6ED711CEDB6F300974CB4 /* ChatTalkViewController.swift */,
+			);
+			name = ChatViewController;
+			sourceTree = "<group>";
+		};
+		80A6ED811CEDB80900974CB4 /* MyInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80E5D4B01CED8E6700C31B80 /* MyInfoViewController.swift */,
+			);
+			name = MyInfoViewController;
+			sourceTree = "<group>";
+		};
 		80C6561B1CEC6D03006C913A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				80695CFF1CEDB209003ADB25 /* GuideTableViewController */,
-				80E5D4B01CED8E6700C31B80 /* MyInfoViewController.swift */,
+				80A6ED801CEDB7EB00974CB4 /* ChatViewController */,
+				80A6ED811CEDB80900974CB4 /* MyInfoViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -149,6 +198,7 @@
 			children = (
 				80E5D4AD1CED879400C31B80 /* MyData.swift */,
 				80C6561E1CEC6DC8006C913A /* Guide.swift */,
+				80A6ED821CEDC48E00974CB4 /* ChatList.swift */,
 				807FE7331CEC816900F69D42 /* TourDays.swift */,
 			);
 			name = Models;
@@ -157,8 +207,9 @@
 		80C6561D1CEC6D16006C913A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				80E5D4B61CED8F7C00C31B80 /* MyInfoViewController */,
 				80E5D4AF1CED8CBF00C31B80 /* GuideViewController */,
+				80A6ED7F1CEDB7CC00974CB4 /* ChatViewController */,
+				80E5D4B61CED8F7C00C31B80 /* MyInfoViewController */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -349,9 +400,12 @@
 			files = (
 				807FE7321CEC78E400F69D42 /* GuideCell.xib in Resources */,
 				80E5D4B51CED8F7000C31B80 /* MyInfoCell.xib in Resources */,
+				80A6ED7A1CEDB76100974CB4 /* ChatMyTalkCell.xib in Resources */,
 				80D998221CE20C9B009C6E1A /* LaunchScreen.storyboard in Resources */,
 				807FE73A1CED500500F69D42 /* GuideProfileCell.xib in Resources */,
 				80D9981F1CE20C9B009C6E1A /* Assets.xcassets in Resources */,
+				80A6ED761CEDB72D00974CB4 /* ChatListCell.xib in Resources */,
+				80A6ED7E1CEDB7C600974CB4 /* ChatReceiveTalkCell.xib in Resources */,
 				80D9981D1CE20C9B009C6E1A /* Main.storyboard in Resources */,
 				8042B49B1CED574400526065 /* GuideStartButtonCell.xib in Resources */,
 			);
@@ -426,15 +480,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A6ED831CEDC48E00974CB4 /* ChatList.swift in Sources */,
+				80A6ED791CEDB76100974CB4 /* ChatMyTalkCell.swift in Sources */,
 				80E5D4AE1CED879400C31B80 /* MyData.swift in Sources */,
 				80C6561F1CEC6DC8006C913A /* Guide.swift in Sources */,
+				80A6ED7D1CEDB7C600974CB4 /* ChatReceiveTalkCell.swift in Sources */,
 				80E5D4B11CED8E6700C31B80 /* MyInfoViewController.swift in Sources */,
+				80A6ED751CEDB72D00974CB4 /* ChatListCell.swift in Sources */,
 				8092981E1CEB18C5009662FD /* GuideTableViewController.swift in Sources */,
 				807FE7361CEC8D8B00F69D42 /* GuideDetailViewController.swift in Sources */,
 				807FE7311CEC78E400F69D42 /* GuideCell.swift in Sources */,
+				80A6ED701CEDB6CB00974CB4 /* ChatListViewController.swift in Sources */,
 				807FE7341CEC816900F69D42 /* TourDays.swift in Sources */,
 				8042B49A1CED574400526065 /* GuideStartButtonCell.swift in Sources */,
 				807FE7391CED500500F69D42 /* GuideProfileCell.swift in Sources */,
+				80A6ED721CEDB6F300974CB4 /* ChatTalkViewController.swift in Sources */,
 				80E5D4B41CED8F7000C31B80 /* MyInfoCell.swift in Sources */,
 				80D998181CE20C9B009C6E1A /* AppDelegate.swift in Sources */,
 			);

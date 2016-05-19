@@ -13,19 +13,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="EQi-Ee-dIM">
-                                <rect key="frame" x="0.0" y="92" width="600" height="95"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EQi-Ee-dIM" id="JAZ-hd-j8S">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="95"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="KtW-5b-dzw" kind="show" identifier="GuideDetailSegue" id="UhV-jo-7b2"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="UAw-ZJ-rwR" id="XaC-yb-YAP"/>
                             <outlet property="delegate" destination="UAw-ZJ-rwR" id="2RL-LI-hfJ"/>
@@ -34,67 +21,81 @@
                     <navigationItem key="navigationItem" title="Guide" id="TTP-Pa-ygZ">
                         <barButtonItem key="rightBarButtonItem" title="ツアー地区" id="Djl-k0-NaY"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="ZiU-Pe-jqu" kind="show" identifier="GuideDetailSegue" id="Qb9-lV-dXX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P5A-rM-9uh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1092" y="-1171"/>
         </scene>
-        <!--Guide Detail View Controller-->
-        <scene sceneID="Vvj-Aq-VSE">
-            <objects>
-                <tableViewController id="KtW-5b-dzw" customClass="GuideDetailViewController" customModule="JTGApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ezh-Ha-dg1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AwP-Ni-msR">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AwP-Ni-msR" id="xsy-MJ-0ri">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="KtW-5b-dzw" id="hP9-kq-QXf"/>
-                            <outlet property="delegate" destination="KtW-5b-dzw" id="oaV-0X-2mh"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RyY-vW-WYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1842" y="-1177"/>
-        </scene>
         <!--Chat-->
         <scene sceneID="zhG-Lm-HFI">
             <objects>
-                <tableViewController id="cDT-ef-BXT" sceneMemberID="viewController">
+                <tableViewController id="cDT-ef-BXT" customClass="ChatListViewController" customModule="JTGApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="AeG-uF-Ode">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aLh-L1-xtj">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aLh-L1-xtj" id="eVz-ir-iT1">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="cDT-ef-BXT" id="WDQ-np-gdP"/>
                             <outlet property="delegate" destination="cDT-ef-BXT" id="14S-qw-1jI"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Chat" id="MoG-DC-Tlm"/>
+                    <connections>
+                        <segue destination="ihb-UI-gyf" kind="show" identifier="ChatTalkSegue" id="aKK-at-fyG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnz-MJ-rdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1092" y="-462"/>
+        </scene>
+        <!--Guide Detail View Controller-->
+        <scene sceneID="Xz7-Mw-Kjo">
+            <objects>
+                <tableViewController id="ZiU-Pe-jqu" customClass="GuideDetailViewController" customModule="JTGApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wDB-z9-Pgo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ntD-PX-cKb">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ntD-PX-cKb" id="RKw-t5-LpP">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZiU-Pe-jqu" id="4hg-h9-C72"/>
+                            <outlet property="delegate" destination="ZiU-Pe-jqu" id="q8o-H5-vcW"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RvR-hg-AeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1858" y="-1146"/>
+        </scene>
+        <!--Chat Talk View Controller-->
+        <scene sceneID="11h-xK-kfx">
+            <objects>
+                <tableViewController id="ihb-UI-gyf" customClass="ChatTalkViewController" customModule="JTGApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TbX-FW-7rT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="ihb-UI-gyf" id="uS7-At-7vT"/>
+                            <outlet property="delegate" destination="ihb-UI-gyf" id="ZBg-36-Kfe"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6SI-f3-t62" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856" y="-462"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="S2i-Pt-ThY">
@@ -135,16 +136,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="odG-Za-fsw">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="odG-Za-fsw" id="NrY-zS-WlD">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="cxU-gc-TRf" id="NiN-kv-H6n"/>
                             <outlet property="delegate" destination="cxU-gc-TRf" id="Anu-X2-5Ht"/>
