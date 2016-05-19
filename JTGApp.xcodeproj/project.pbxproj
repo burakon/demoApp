@@ -126,11 +126,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		80C6561B1CEC6D03006C913A /* ViewController */ = {
+		80695CFF1CEDB209003ADB25 /* GuideTableViewController */ = {
 			isa = PBXGroup;
 			children = (
 				8092981D1CEB18C5009662FD /* GuideTableViewController.swift */,
 				807FE7351CEC8D8B00F69D42 /* GuideDetailViewController.swift */,
+			);
+			name = GuideTableViewController;
+			sourceTree = "<group>";
+		};
+		80C6561B1CEC6D03006C913A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80695CFF1CEDB209003ADB25 /* GuideTableViewController */,
 				80E5D4B01CED8E6700C31B80 /* MyInfoViewController.swift */,
 			);
 			name = ViewController;

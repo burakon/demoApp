@@ -67,7 +67,7 @@
             </objects>
             <point key="canvasLocation" x="1842" y="-1177"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Chat-->
         <scene sceneID="zhG-Lm-HFI">
             <objects>
                 <tableViewController id="cDT-ef-BXT" sceneMemberID="viewController">
@@ -90,7 +90,7 @@
                             <outlet property="delegate" destination="cDT-ef-BXT" id="14S-qw-1jI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="MoG-DC-Tlm"/>
+                    <navigationItem key="navigationItem" title="Chat" id="MoG-DC-Tlm"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnz-MJ-rdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,6 +164,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dwR-nN-GPg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.6588235294" green="0.090196078430000007" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="cDT-ef-BXT" kind="relationship" relationship="rootViewController" id="PZD-0f-E9F"/>
@@ -181,6 +184,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ITl-Qx-Gor">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.6588235294" green="0.090196078430000007" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="cxU-gc-TRf" kind="relationship" relationship="rootViewController" id="AYj-Eo-t6Z"/>
@@ -198,6 +204,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dRH-eR-EXV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.6588235294" green="0.090196078430000007" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="cD2-GW-z8R" kind="relationship" relationship="rootViewController" id="ymd-jQ-gtd"/>
@@ -215,6 +224,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3PA-wm-8b0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.6588235294" green="0.090196078430000007" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="UAw-ZJ-rwR" kind="relationship" relationship="rootViewController" id="PCI-CW-wgz"/>

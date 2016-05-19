@@ -5,7 +5,7 @@ import Toucan
 
 struct MyData {
     let name: String
-    let image: UIImage
+    var image: UIImage
     let countryImage: UIImage
     let area: String
     let language: String
