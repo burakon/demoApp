@@ -3,6 +3,8 @@
 import UIKit
 import Toucan
 
+
+
 struct MyData {
     let name: String
     var image: UIImage
@@ -11,11 +13,13 @@ struct MyData {
     let language: String
     let profile: String
     
-}
+    
+   }
 
 extension MyData {
     
     static let Me = MyData (
+        
         name: "Kenji Naito",
         image: UIImage(named: "KenjiNaito")!,
         countryImage: UIImage(named: "JP")!,

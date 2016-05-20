@@ -44,7 +44,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Chat" id="MoG-DC-Tlm"/>
                     <connections>
-                        <segue destination="ihb-UI-gyf" kind="show" identifier="ChatTalkSegue" id="aKK-at-fyG"/>
+                        <segue destination="Lk6-Y3-9I1" kind="show" identifier="ChatTalkSegue" id="VTq-sH-6HI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnz-MJ-rdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -64,7 +64,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ntD-PX-cKb" id="RKw-t5-LpP">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -80,22 +80,32 @@
             <point key="canvasLocation" x="1858" y="-1146"/>
         </scene>
         <!--Chat Talk View Controller-->
-        <scene sceneID="11h-xK-kfx">
+        <scene sceneID="cmd-8C-pdW">
             <objects>
-                <tableViewController id="ihb-UI-gyf" customClass="ChatTalkViewController" customModule="JTGApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TbX-FW-7rT">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="Lk6-Y3-9I1" customClass="ChatTalkViewController" customModule="JTGApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0Uo-tC-xRV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="icK-Gy-l9M">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="icK-Gy-l9M" id="cSe-6H-gGi">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="ihb-UI-gyf" id="uS7-At-7vT"/>
-                            <outlet property="delegate" destination="ihb-UI-gyf" id="ZBg-36-Kfe"/>
+                            <outlet property="dataSource" destination="Lk6-Y3-9I1" id="f09-DZ-G7P"/>
+                            <outlet property="delegate" destination="Lk6-Y3-9I1" id="bwr-ux-mSc"/>
                         </connections>
                     </tableView>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6SI-f3-t62" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hmH-GZ-rN0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1856" y="-462"/>
+            <point key="canvasLocation" x="1858" y="-444"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="S2i-Pt-ThY">

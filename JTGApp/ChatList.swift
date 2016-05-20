@@ -38,13 +38,13 @@ extension ChatList {
         talks: [
             Talk(
                 name : "Bill",
-                text : "Hello!I'm Bill"),
+                text : "Hello!I'm Bill.日本語でおk！"),
             Talk(
                 name : "Me",
-                text : "Thenks Your MSG!"),
+                text : "きゃーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\n\n\nありがとうビル!"),
             Talk(
                 name : "Bill",
-                text : "Billlllll!"),
+                text : "heyhey Fooooooooooooooooooooo\npop\nhunhun\nfufufu\n\n\nyo"),
             Talk(
                 name : "Me",
                 text : "Bye")]

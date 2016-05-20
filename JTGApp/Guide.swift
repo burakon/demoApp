@@ -75,3 +75,9 @@ extension Guide {
         createdAt:"2016/05/20"
     )
 }
+
+
+struct TourDays{
+    let firstDay: String
+    let lastDay: String
+}

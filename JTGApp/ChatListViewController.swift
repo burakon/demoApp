@@ -5,6 +5,7 @@ class ChatListViewController: UITableViewController {
     
     private let chatList = ChatList.talks
     private let chatTalkSegue = "ChatTalkSegue"
+    private var selectedPerson:ChatList!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,13 +32,14 @@ class ChatListViewController: UITableViewController {
         }
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if let chatDetailVC = segue.destinationViewController as? ChatTalkViewController {
-//            if let selectedIndexPath = tableView.indexPathForSelectedRow {
-//                chatDetailVC.chatList = chatList[selectedIndexPath.row]
-//            }
-//        }
-//    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let chatDetailVC = segue.destinationViewController as? ChatTalkViewController {
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                chatDetailVC.talks = chatList[selectedIndexPath.row].talks
+                chatDetailVC.name = chatList[selectedIndexPath.row].person.name
+            }
+        }
+    }
     
     // MARK: - Table view data source
     
@@ -70,7 +72,7 @@ class ChatListViewController: UITableViewController {
 //        if let indexPath = tableView.indexPathForRowAtPoint(location) {
 //            previewingContext.sourceRect = tableView.rectForRowAtIndexPath(indexPath)
 //            let chatTalkDetailVC = ChatTalkViewController()
-//            chatTalkDetailVC.chatList = chatList[indexPath.row]
+//            chatTalkDetailVC.talks = chatList[indexPath.row]
 //            return chatTalkDetailVC
 //        }
 //        return nil
