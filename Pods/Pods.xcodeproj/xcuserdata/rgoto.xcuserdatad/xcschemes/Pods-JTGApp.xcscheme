@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2B163396251B966E280B667C'
+               BlueprintIdentifier = 'EE879723D8AC017C00F9416A'
                BlueprintName = 'Pods-JTGApp'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_JTGApp.framework'>

@@ -1,15 +1,27 @@
 
 import UIKit
+import SlackTextViewController
 
 class ChatTalkViewController: UITableViewController {
     
     var talks :[Talk]!
     var name :String!
     
+    private var pagingIndicatorView: UIActivityIndicatorView!
+    
+    private var timer: NSTimer?
+    private var poolingInterval: NSTimeInterval = 2
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        pagingIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
+        pagingIndicatorView.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, 50)
+        pagingIndicatorView.hidesWhenStopped = true
+        
+        
+
         
         
         title = name
@@ -22,6 +34,17 @@ class ChatTalkViewController: UITableViewController {
         
         //横棒を描画しない
         tableView.separatorStyle = .None
+        
+        // SlackTextViewController使うために書きたかったんだ
+//        self.bounces = true
+//        self.keyboardPanningEnabled = true
+//        self.inverted = false
+//        self.textView.placeholder = "Message"
+//        self.textView.placeholderColor = UIColor.lightGrayColor()
+//        self.rightButton.setTitle("送信", forState: UIControlState.Normal)
+//        self.textInputbar.autoHideRightButton = true
+//        self.textInputbar.counterStyle = SLKCounterStyle.Split
+//        self.typingIndicatorView.canResignByTouch = true
         
     }
     override func viewWillAppear(animated: Bool) {
@@ -51,7 +74,6 @@ class ChatTalkViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        
         switch talks[indexPath.row].name{
             
         case "Me":
@@ -65,6 +87,24 @@ class ChatTalkViewController: UITableViewController {
             return cell
         }
     }
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        //上のクルクル
+        if scrollView.contentOffset.y < 50 {
+            self.tableView.tableHeaderView = self.pagingIndicatorView
+            pagingIndicatorView.startAnimating()
+            timer = NSTimer.scheduledTimerWithTimeInterval(poolingInterval, target: self, selector: #selector(self.stopIndicator(_:)), userInfo: nil, repeats: true)
+            
+        }
+    }
+    
+    func stopIndicator (sender: AnyObject? ) {
+        
+        //animationできなかったからパッともどってしまう〜う〜ん
+        self.tableView.tableHeaderView = nil
+        pagingIndicatorView.stopAnimating()
+    }
+    
+    
 }
 
 

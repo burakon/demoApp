@@ -12,6 +12,8 @@ pod 'RealmSwift'
 pod 'Toucan', '~> 0.5.0' 
 #NSDate
 pod 'Timepiece'
+#ChatTalkViewController
+pod 'SlackTextViewController', '~> 1.6'
 end
 
 target 'JTGAppTests' do

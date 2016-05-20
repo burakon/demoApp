@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Guide-->
@@ -86,7 +87,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0Uo-tC-xRV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.95055634470000006" blue="0.94752604169999999" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="icK-Gy-l9M">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -107,7 +108,7 @@
             </objects>
             <point key="canvasLocation" x="1858" y="-444"/>
         </scene>
-        <!--View Controller-->
+        <!--Report-->
         <scene sceneID="S2i-Pt-ThY">
             <objects>
                 <viewController id="cD2-GW-z8R" sceneMemberID="viewController">
@@ -119,20 +120,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="体験記は見せ方要検討" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3m-Fm-pnk">
-                                <rect key="frame" x="215" y="289" width="170" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reviewPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="nDX-uT-OiV">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from instagram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqk-ju-xMP">
+                                <rect key="frame" x="494" y="72" width="86" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Y3m-Fm-pnk" firstAttribute="centerX" secondItem="KjA-bq-fw5" secondAttribute="centerX" id="5Z3-jT-htO"/>
-                            <constraint firstItem="Y3m-Fm-pnk" firstAttribute="centerY" secondItem="KjA-bq-fw5" secondAttribute="centerY" id="Vtr-Vg-Eim"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nDX-uT-OiV" secondAttribute="trailing" constant="-20" id="AWt-4Z-cey"/>
+                            <constraint firstItem="nDX-uT-OiV" firstAttribute="top" secondItem="9O0-a1-sdg" secondAttribute="bottom" id="GQO-7u-9iv"/>
+                            <constraint firstItem="mh8-KV-CGf" firstAttribute="top" secondItem="nDX-uT-OiV" secondAttribute="bottom" id="PQM-5W-Thx"/>
+                            <constraint firstItem="Rqk-ju-xMP" firstAttribute="top" secondItem="9O0-a1-sdg" secondAttribute="bottom" constant="8" id="cHH-ME-mZw"/>
+                            <constraint firstItem="Rqk-ju-xMP" firstAttribute="trailing" secondItem="KjA-bq-fw5" secondAttribute="trailingMargin" id="x0D-uA-6RI"/>
+                            <constraint firstItem="nDX-uT-OiV" firstAttribute="leading" secondItem="KjA-bq-fw5" secondAttribute="leadingMargin" constant="-20" id="xY1-QC-x8l"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Gnp-EB-q9C"/>
+                    <navigationItem key="navigationItem" title="Report" id="Gnp-EB-q9C"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOS-wx-Aas" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -268,6 +276,7 @@
         <image name="guide" width="30" height="30"/>
         <image name="message" width="35" height="38"/>
         <image name="report" width="30" height="30"/>
+        <image name="reviewPhoto" width="212" height="321"/>
         <image name="setting" width="30" height="30"/>
     </resources>
 </document>

@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="36b-t6-NrD" firstAttribute="top" secondItem="GEg-a2-gh0" secondAttribute="top" constant="8" id="82F-6c-PgC"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="36b-t6-NrD" secondAttribute="bottom" constant="20" id="EDU-Dt-OHQ"/>
@@ -65,6 +65,7 @@
                     <constraint firstItem="nYa-00-sN6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="c3A-r0-Alf"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.95055634470000006" blue="0.94752604169999999" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="fukidashiLabel" destination="36b-t6-NrD" id="egI-j1-VE4"/>
                 <outlet property="personImageView" destination="nYa-00-sN6" id="vBq-om-aXt"/>

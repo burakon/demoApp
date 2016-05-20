@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SlackTextViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Timepiece.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3469526E9A7AD74BC6322EAF13EE90D9</key>
+		<key>066EBA06E4B249F641F810793C42F4C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7EC15FF9D39DBE3FE2F7932D1CBCE729</key>
+		<key>462360E2AE74482FD5F7543454375297</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A51729664DF3E9B1054F77AF2F43131D</key>
+		<key>47E487F013B87D265C3FCBEFF2B23C1E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5BCAE73279820E5691635E7B60FD598</key>
+		<key>5D833DE550FEC4ECC94398D13BCC8E8A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E006E81B307639A40A856ACBF178C15B</key>
+		<key>AEB44A47D650F8911F3F1494264CA50B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E61CE3B6DFA1FE6B3E296965C76C0E10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE33C7273DFF70166A68F4208222D2C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

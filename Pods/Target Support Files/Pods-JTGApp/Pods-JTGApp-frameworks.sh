@@ -87,6 +87,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-JTGApp/MBProgressHUD.framework"
   install_framework "Pods-JTGApp/Realm.framework"
   install_framework "Pods-JTGApp/RealmSwift.framework"
+  install_framework "Pods-JTGApp/SlackTextViewController.framework"
   install_framework "Pods-JTGApp/Timepiece.framework"
   install_framework "Pods-JTGApp/Toucan.framework"
 fi
@@ -94,6 +95,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-JTGApp/MBProgressHUD.framework"
   install_framework "Pods-JTGApp/Realm.framework"
   install_framework "Pods-JTGApp/RealmSwift.framework"
+  install_framework "Pods-JTGApp/SlackTextViewController.framework"
   install_framework "Pods-JTGApp/Timepiece.framework"
   install_framework "Pods-JTGApp/Toucan.framework"
 fi

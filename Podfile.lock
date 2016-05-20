@@ -5,12 +5,14 @@ PODS:
   - Realm/Headers (0.98.6)
   - RealmSwift (0.98.6):
     - Realm (= 0.98.6)
+  - SlackTextViewController (1.9.1)
   - Timepiece (0.4.2)
   - Toucan (0.5.0)
 
 DEPENDENCIES:
   - MBProgressHUD
   - RealmSwift
+  - SlackTextViewController (~> 1.6)
   - Timepiece
   - Toucan (~> 0.5.0)
 
@@ -18,6 +20,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   Realm: 44803f35418c5d89b27825a564247fcd190de37e
   RealmSwift: c7239c52c83f8c43525a5269ba7be1694da33afc
+  SlackTextViewController: 6b0d1030c53937226fc5358f217af2a34fc211cf
   Timepiece: cf53bb908bf542acc0e3d5f69cabfed869df4ebd
   Toucan: 0519c341148252ae114c5a657d2a85bb9ada9e40
 
