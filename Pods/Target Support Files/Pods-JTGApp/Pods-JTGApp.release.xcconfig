@@ -1,8 +1,10 @@
 EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD" "$PODS_CONFIGURATION_BUILD_DIR/SlackTextViewController" "$PODS_CONFIGURATION_BUILD_DIR/Timepiece" "$PODS_CONFIGURATION_BUILD_DIR/Toucan" "$PODS_CONFIGURATION_BUILD_DIR/WYPopoverController"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/MBProgressHUD.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Realm.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/RealmSwift.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/SlackTextViewController.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Timepiece.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Toucan.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "MBProgressHUD" -framework "Realm" -framework "RealmSwift" -framework "SlackTextViewController" -framework "Timepiece" -framework "Toucan"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD/MBProgressHUD.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SlackTextViewController/SlackTextViewController.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Timepiece/Timepiece.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Toucan/Toucan.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/WYPopoverController/WYPopoverController.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "MBProgressHUD" -framework "SlackTextViewController" -framework "Timepiece" -framework "Toucan" -framework "WYPopoverController"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
-PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-JTGApp
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods

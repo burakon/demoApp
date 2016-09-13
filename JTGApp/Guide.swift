@@ -17,7 +17,7 @@ struct Guide {
 
 extension Guide {
     
-    static let guide = [Mark, Evan, Steve,Bill ].sort { $0.tourDays.firstDay < $1.tourDays.firstDay }
+    static let guide = [Mark, Evan, Steve ].sort { $0.tourDays.firstDay < $1.tourDays.firstDay }
     
     static let Mark = Guide(
         name: "Mark",
@@ -59,19 +59,6 @@ extension Guide {
         ),
                 profile:" Hi! I'm Steve. I'd like to trip in Tokyo. Because I never been to Tokyo. Tokyo is the most popular spot in Japan. I`d like to go shopping, eating many foods and go up to Tokyo tower!" ,
         
-        createdAt:"2016/05/20"
-    )
-    static let Bill = Guide(
-        name: "Bill",
-        personImage: Toucan(image: UIImage(named: "Bill")!).maskWithEllipse().image,
-        countryImage: UIImage(named: "US")!,
-        area : "TourArea Tokyo,Roppongi",
-        language:"Eng" ,
-        tourDays: TourDays(
-            firstDay: "2016/08/05",
-            lastDay: "2016/08/09"
-        ),
-                profile:" Hi! I'm Bill. I'd like to trip in Tokyo. Because I never been to Tokyo. Tokyo is the most popular spot in Japan. I`d like to go shopping, eating many foods and go up to Tokyo tower!" ,
         createdAt:"2016/05/20"
     )
 }

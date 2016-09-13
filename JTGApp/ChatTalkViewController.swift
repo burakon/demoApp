@@ -21,8 +21,6 @@ class ChatTalkViewController: UITableViewController {
         pagingIndicatorView.hidesWhenStopped = true
         
         
-
-        
         
         title = name
         
@@ -82,29 +80,31 @@ class ChatTalkViewController: UITableViewController {
             return cell
             
         default:
-            let cell = tableView.dequeueReusableCellWithIdentifier(String(OtherMessageCell), forIndexPath: indexPath) as! OtherMessageCell
+            let cell = tableView.dequeueReusableCellWithIdentifier(String(OtherMessageCell) ,forIndexPath: indexPath) as! OtherMessageCell
             cell.configure(withTalk: talks[indexPath.row] )
-            return cell
-        }
-    }
-    override func scrollViewDidScroll(scrollView: UIScrollView) {
-        //上のクルクル
-        if scrollView.contentOffset.y < 50 {
-            self.tableView.tableHeaderView = self.pagingIndicatorView
-            pagingIndicatorView.startAnimating()
-            timer = NSTimer.scheduledTimerWithTimeInterval(poolingInterval, target: self, selector: #selector(self.stopIndicator(_:)), userInfo: nil, repeats: true)
             
+            return cell
+            
+            }
         }
-    }
-    
-    func stopIndicator (sender: AnyObject? ) {
+        override func scrollViewDidScroll(scrollView: UIScrollView) {
+            //上のクルクル
+            if scrollView.contentOffset.y < 50 {
+                self.tableView.tableHeaderView = self.pagingIndicatorView
+                pagingIndicatorView.startAnimating()
+                timer = NSTimer.scheduledTimerWithTimeInterval(poolingInterval, target: self, selector: #selector(self.stopIndicator(_:)), userInfo: nil, repeats: true)
+                
+            }
+        }
         
-        //animationできなかったからパッともどってしまう〜う〜ん
-        self.tableView.tableHeaderView = nil
-        pagingIndicatorView.stopAnimating()
-    }
-    
-    
+        func stopIndicator (sender: AnyObject? ) {
+            
+            //animationできなかったからパッともどってしまう〜う〜ん
+            self.tableView.tableHeaderView = nil
+            pagingIndicatorView.stopAnimating()
+        }
+        
+        
 }
 
 

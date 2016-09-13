@@ -11,7 +11,7 @@ struct ChatList {
 }
 
 extension ChatList {
-    static let talks = [MarkTalk,BillTalk]
+    static let talks = [MarkTalk,EvanTalk]
     
     static let MarkTalk = ChatList (
         person: Guide.Mark,
@@ -33,11 +33,11 @@ extension ChatList {
         
         lastTalk: "OK! Thanks"
     )
-    static let BillTalk = ChatList (
-        person: Guide.Bill,
+    static let EvanTalk = ChatList (
+        person: Guide.Evan,
         talks: [
             Talk(
-                name : "Bill",
+                name : "Evan",
                 text : "Hello!I'm Bill.日本語でおk！"),
             Talk(
                 name : "Me",
